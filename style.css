@@ -1,4 +1,74 @@
+@media (min-width: 901px) {
+  .inputmono {
+  font-family: "Input Mono";
+  font-style: normal;
+  font-weight: normal;
+}
 #input {
-  position: relative;
-  left: -300px;
+    border: none;
+    background: #000;
+    font-family: "Input Mono", Menlo, monospace;
+    width: 90%;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+#input:focus {
+    border: none;
+    background: #000;
+    outline: none;
+    font-family: "Input Mono", Menlo, monospace;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+code {
+    background: #000;
+    color: #fff;
+    font-family: "Input Mono", Menlo, monospace;
+    padding: 4px;
+}
+.menu-item {
+    opacity: 0;
+}
+.current-menu-item {
+    opacity: 1;
+}
+.menu-item:hover {
+    opacity: 1;
+}
+}
+
+@media (max-width: 900px) {
+  #input {
+    border: none;
+    background: #000;
+    font-family: "Input Mono", Menlo, monospace;
+    width: 85%;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+#input:focus {
+    border: none;
+    background: #000;
+    outline: none;
+    font-family: "Input Mono", Menlo, monospace;
+    color: #fff;
+    height: 1.5em;
+    font-size: 1em;
+    padding-left: 4px;
+}
+code {
+    background: #000;
+    color: #fff;
+    font-family: "Input Mono", Menlo, monospace;
+    padding: 4px;
+}
+.span-wrap {
+    color: #000;
+}
 }
