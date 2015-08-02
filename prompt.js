@@ -12,7 +12,7 @@ function prompt()
 function gamePrompt(){
   var gameSearch = prompt("What game would you like to play?");
   window.location.href = "https://archive.org/details/internetarcade?and[]=" + gameSearch.toLowerCase();
-};
+}
 
 // Hey it's a little text adventure right here!
 
@@ -20,7 +20,7 @@ function gamePrompt(){
 function commandPrompt(){
   var promptElement = document.getElementById("input");
   var promptInput = promptElement.value;
-  var promptInput = promptInput.toLowerCase();
+  promptInput = promptInput.toLowerCase();
   if (promptInput === "gallery") {
     window.location.href = "http://elit.jeffreymoro.com/gallery";
   } else if (promptInput === "course"){
@@ -38,19 +38,19 @@ function commandPrompt(){
     if (window.screen.width > 900){
         gamePrompt();
     } else {
-      window.location.href = "https://archive.org/details/internetarcade"
-    };
+      window.location.href = "https://archive.org/details/internetarcade";
+    }
   } else if (promptInput === "secrets") {
     alert("Wouldn't you like to know?");
   } else {
     alert("I'm afraid I can't do that.");
   }
-};
+}
 
 // Let you type wherever!
 function inputFocus(){
     document.getElementById("input").focus();
-};
+}
 window.onkeydown = inputFocus;
 
 // Execute the prompt on Enter.
